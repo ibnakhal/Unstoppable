@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 37932cbe06b058b47895267881af755d
+timeCreated: 1519345476
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HulkConversionUnstoppable_0
+    21300002: HulkConversionUnstoppable_1
+    21300004: HulkConversionUnstoppable_2
+    21300006: HulkConversionUnstoppable_3
+    21300008: HulkConversionUnstoppable_4
+    21300010: HulkConversionUnstoppable_5
+    21300012: HulkConversionUnstoppable_6
+    21300014: HulkConversionUnstoppable_7
+    21300016: HulkConversionUnstoppable_8
+    21300018: HulkConversionUnstoppable_9
+    21300020: HulkConversionUnstoppable_10
+    21300022: HulkConversionUnstoppable_11
+    21300024: HulkConversionUnstoppable_12
+    21300026: HulkConversionUnstoppable_13
+    21300028: HulkConversionUnstoppable_14
+    21300030: HulkConversionUnstoppable_15
+    21300032: HulkConversionUnstoppable_16
+    21300034: HulkConversionUnstoppable_17
+    21300036: HulkConversionUnstoppable_18
+    21300038: HulkConversionUnstoppable_19
+    21300040: HulkConversionUnstoppable_20
+    21300042: HulkConversionUnstoppable_21
+    21300044: HulkConversionUnstoppable_22
+    21300046: HulkConversionUnstoppable_23
+    21300048: HulkConversionUnstoppable_24
+    21300050: HulkConversionUnstoppable_25
+    21300052: HulkConversionUnstoppable_26
+    21300054: HulkConversionUnstoppable_27
+    21300056: HulkConversionUnstoppable_28
+    21300058: HulkConversionUnstoppable_29
+    21300060: HulkConversionUnstoppable_30
+    21300062: HulkConversionUnstoppable_31
+    21300064: HulkConversionUnstoppable_32
+    21300066: HulkConversionUnstoppable_33
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1297
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_1
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1298
+        width: 108
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1090
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1091
+        width: 106
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_4
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1091
+        width: 106
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1002
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 904
+        width: 66
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 904
+        width: 66
+        height: 73
+      alignment: 9
+      pivot: {x: 0.49575078, y: 0.51152396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 905
+        width: 79
+        height: 71
+      alignment: 9
+      pivot: {x: 0.40418428, y: 0.5258247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 903
+        width: 82
+        height: 95
+      alignment: 9
+      pivot: {x: 0.38257208, y: 0.39405003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 913
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_11
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 904
+        width: 66
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_14
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_17
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_18
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_21
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_22
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_23
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_25
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 899
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_26
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 809
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_27
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 810
+        width: 91
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 511
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_29
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 511
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_30
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 417
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_31
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 417
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 117
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HulkConversionUnstoppable_33
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 117
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,15 +24,21 @@ public class PlayerControls : MonoBehaviour
 
     [Header("State Bools")]
     public bool isIdle;
-    public bool facingRight = true;
+    public bool facingLeft = true;
 
-
+    [Header ("Combat")]
+    public int attackCounter;
+    public GameObject shockWave;
+    public Transform waveSpawn1;
+    public Transform waveSpawn2;
+    public bool schocked;
     // Use this for initialization
     void Start()
     {
         anim = this.GetComponent<Animator>();
         masterSprite = this.GetComponent<SpriteRenderer>();
         body = this.GetComponent<Rigidbody2D>();
+        StartCoroutine(attackReset());
     }
 
     // Update is called once per frame
@@ -45,6 +51,22 @@ public class PlayerControls : MonoBehaviour
         else
         {
             isIdle = false;
+        }
+
+        if(Input.GetAxis("Fire1")!=0)
+        {
+            attackCounter++;
+            anim.SetInteger("attack", attackCounter);
+            anim.SetBool("attacking", true);
+        }
+
+        if(isIdle)
+        {
+            anim.SetBool("idlestate", true);
+        }
+        else
+        {
+            anim.SetBool("idlestate", false);
         }
     }
 
@@ -65,17 +87,34 @@ public class PlayerControls : MonoBehaviour
         if(grounded)
         {
             anim.SetBool("isGrounded", true);
+            
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLand") && !schocked)
+        {
+            schocked = true;
+            GameObject clone = Instantiate(shockWave, waveSpawn1.position, waveSpawn1.rotation);
+            GameObject clone2 = Instantiate(shockWave, waveSpawn2.position, waveSpawn2.rotation);
+
+            StartCoroutine(wave());
         }
 
         float move = Input.GetAxis("Horizontal");
 
                 body.velocity = new Vector2(move * walkSpeed, body.velocity.y);
-          
-            if (move > 0 && !facingRight)
+        if (move != 0)
+        {
+            anim.SetBool("Walking", true);
+        }
+        else
+        {
+            anim.SetBool("Walking", false);
+        }
+            if (move > 0 && !facingLeft)
             {
                 Flip();
             }
-            else if (move < 0 && facingRight)
+            else if (move < 0 && facingLeft)
             {
                 Flip();
             }
@@ -84,15 +123,35 @@ public class PlayerControls : MonoBehaviour
 
     public void Flip()
     {
-        facingRight = !facingRight;
-        if (facingRight)
-        {
-            masterSprite.flipX = true;
-        }
-        else if (!facingRight)
+        facingLeft = !facingLeft;
+        if (facingLeft)
         {
             masterSprite.flipX = false;
         }
+        else if (!facingLeft)
+        {
+            masterSprite.flipX = true;
+        }
     }
 
+    public IEnumerator attackReset()
+    {
+        while (isActiveAndEnabled)
+        {
+            yield return new WaitForSeconds(3);
+            if (isIdle)
+            {
+                attackCounter = 0;
+                anim.SetInteger("attack", attackCounter);
+                anim.SetBool("attacking", false);
+            }
+        }
+    }
+
+
+    public IEnumerator wave()
+    {
+        yield return new WaitForSeconds(1);
+        schocked = false;
+    }
 }
