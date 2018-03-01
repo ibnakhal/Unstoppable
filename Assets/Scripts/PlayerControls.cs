@@ -32,6 +32,9 @@ public class PlayerControls : MonoBehaviour
     public Transform waveSpawn1;
     public Transform waveSpawn2;
     public bool schocked;
+    public GameObject hitboxPivot;
+    public GameObject hitbox;
+
     // Use this for initialization
     void Start()
     {
@@ -58,7 +61,9 @@ public class PlayerControls : MonoBehaviour
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
             anim.SetBool("attacking", true);
+            hitbox.GetComponentInChildren<Hitbox>().hit = true;
         }
+
 
         if(isIdle)
         {
@@ -126,10 +131,13 @@ public class PlayerControls : MonoBehaviour
         facingLeft = !facingLeft;
         if (facingLeft)
         {
-            masterSprite.flipX = false;
+            hitboxPivot.transform.Rotate(new Vector3(0, 180, 0));
+          masterSprite.flipX = false;
         }
         else if (!facingLeft)
         {
+            hitboxPivot.transform.Rotate(new Vector3(0, 180, 0));
+
             masterSprite.flipX = true;
         }
     }
@@ -144,6 +152,8 @@ public class PlayerControls : MonoBehaviour
                 attackCounter = 0;
                 anim.SetInteger("attack", attackCounter);
                 anim.SetBool("attacking", false);
+                hitbox.GetComponentInChildren<Hitbox>().hit = false;
+
             }
         }
     }
