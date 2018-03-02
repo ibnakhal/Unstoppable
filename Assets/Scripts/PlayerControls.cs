@@ -45,7 +45,6 @@ public class PlayerControls : MonoBehaviour
         anim = this.GetComponent<Animator>();
         masterSprite = this.GetComponent<SpriteRenderer>();
         body = this.GetComponent<Rigidbody2D>();
-        //StartCoroutine(attackReset());
     }
 
     // Update is called once per frame
