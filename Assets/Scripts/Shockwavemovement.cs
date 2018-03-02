@@ -3,14 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shockwavemovement : MonoBehaviour {
-
+    public float speed;
+    public bool isleft;
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        this.transform.Translate(new Vector2(1, 0)*Time.deltaTime);
-	}
+        if (isleft)
+        {
+            this.GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed);
+        }
+        else
+        {
+            this.GetComponent<Rigidbody2D>().AddForce(Vector2.right * speed);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }

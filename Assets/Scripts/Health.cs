@@ -6,6 +6,7 @@ public class Health : MonoBehaviour {
     [Header("Health Stats")]
     public int hP;
     public string damageString;
+    public string deadString;
     public bool invuln;
     public Sprite dead;
     [Header("Animations")]
@@ -36,7 +37,10 @@ public class Health : MonoBehaviour {
     {
         anim.SetBool("dead", true);
         this.GetComponent<SpriteRenderer>().sprite = dead;
-        StartCoroutine(delete());
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName(deadString))
+        {
+            StartCoroutine(delete());
+        }
     }
     public void Damaged(int damage)
     {
@@ -50,7 +54,7 @@ public class Health : MonoBehaviour {
 
     public IEnumerator delete()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
     }
 
