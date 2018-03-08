@@ -7,13 +7,22 @@ public class Health : MonoBehaviour {
     public int hP;
     public string damageString;
     public string deadString;
+    public string hurtString;
     public bool invuln;
     public Sprite dead;
     [Header("Animations")]
     public Animator anim;
 
-	// Use this for initialization
-	void Start () {
+    [Header("Grounded Stats")]
+    public bool grounded;
+    public Transform groundCheck;
+    public float groundRadius = 0.2f;
+    public LayerMask whatIsGround;
+
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -29,7 +38,10 @@ public class Health : MonoBehaviour {
             anim.SetBool("damage", false);
             invuln = false;
         }
-
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName(hurtString))
+        {
+            anim.SetBool("damage", false);
+        }
 
     }
 
@@ -54,10 +66,24 @@ public class Health : MonoBehaviour {
 
     public IEnumerator delete()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         Destroy(this.gameObject);
+
     }
 
+    public void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+
+        if(grounded)
+        {
+            anim.SetBool("isGrounded", true);
+        }
+        else
+        {
+            anim.SetBool("isGrounded", false);
+        }
+    }
 
 
 
