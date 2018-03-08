@@ -69,6 +69,7 @@ public class PlayerControls : MonoBehaviour
             hitbox.GetComponent<Hitbox>().hit = true;
             hitbox.GetComponent<Hitbox>().damage = 2;
             timer = attack1Delay;
+            hitbox.GetComponent<Hitbox>().left = facingLeft;
         }
         if (timer <= 0)
         {
@@ -77,9 +78,11 @@ public class PlayerControls : MonoBehaviour
             anim.SetInteger("attack", attackCounter);
             timer = 0;
             charge = false;
+            hitbox.GetComponent<Hitbox>().hit = false;
+
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             anim.SetBool("charge", true);
         }
@@ -94,12 +97,10 @@ public class PlayerControls : MonoBehaviour
             hitbox.GetComponent<Hitbox>().damage = 5;
             if (facingLeft)
             {
-                //this.gameObject.transform.Translate(Vector2.right * walkSpeed *2* Time.deltaTime);
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * walkSpeed * 2000);
             }
             if(!facingLeft)
             {
-                //this.gameObject.transform.Translate(Vector2.left * walkSpeed *2* Time.deltaTime);
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * walkSpeed * 2000);
 
 
@@ -144,6 +145,7 @@ public class PlayerControls : MonoBehaviour
             schocked = true;
             GameObject clone = Instantiate(shockWave, waveSpawn1.position, waveSpawn1.rotation);
             clone.GetComponent<Shockwavemovement>().isleft = false;
+            clone.GetComponent<Hitbox>().left = true;
             GameObject clone2 = Instantiate(shockWave, waveSpawn2.position, waveSpawn2.rotation);
             clone2.GetComponent<Shockwavemovement>().isleft = true;
 
@@ -189,21 +191,6 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    //public IEnumerator attackReset()
-    //{
-    //    while (isActiveAndEnabled)
-    //    {
-    //        yield return new WaitForSeconds(1);
-    //        if (isIdle)
-    //        {
-    //            attackCounter = 0;
-    //            anim.SetInteger("attack", attackCounter);
-    //            anim.SetBool("attacking", false);
-    //            hitbox.GetComponent<Hitbox>().hit = false;
-
-    //        }
-    //    }
-    //}
 
 
     public IEnumerator wave()
@@ -216,11 +203,23 @@ public class PlayerControls : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D other)
     {
+        Vector2 dir = new Vector2();
+
+        if(facingLeft)
+        {
+            dir = Vector2.left;
+        }
+        else
+        {
+            dir = Vector2.right;
+        }
+
         Debug.Log("boom");
         if (other.gameObject.tag == "Enemy")
         {
             if (charge)
             {
+                other.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2.up*2000)+ dir);
                 charge = !charge;
                 anim.SetBool("charge", false);
                 hitbox.GetComponent<Hitbox>().hit = false;
