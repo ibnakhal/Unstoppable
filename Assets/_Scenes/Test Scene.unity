@@ -472,7 +472,7 @@ MonoBehaviour:
   hitboxPivot: {fileID: 76777872}
   hitbox: {fileID: 1475279382}
   timer: 10
-  attack1Delay: 1
+  attack1Delay: 0.25
   attack2Delay: 0
   attack3Delay: 0
   charge: 0
