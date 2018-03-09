@@ -110,6 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   hit: 1
+  left: 0
+  source: {fileID: 0}
 --- !u!114 &114851146805649842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0df732a0394a1f45bdc376536ff9836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 500
   isleft: 0
 --- !u!212 &212237225973795734
 SpriteRenderer:

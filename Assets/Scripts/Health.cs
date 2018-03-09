@@ -9,6 +9,7 @@ public class Health : MonoBehaviour {
     public string deadString;
     public string hurtString;
     public bool invuln;
+    public bool deadBool = false;
     public Sprite dead;
     [Header("Animations")]
     public Animator anim;
@@ -19,18 +20,21 @@ public class Health : MonoBehaviour {
     public float groundRadius = 0.2f;
     public LayerMask whatIsGround;
 
-
-
+    public AudioSource source;
+    public AudioClip hurtClip;
+    public AudioClip dieClip;
     // Use this for initialization
     void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        source = this.GetComponent<AudioSource>();
+
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
-		if(hP<=0)
+		if(hP<=0 && !deadBool)
         {
+            deadBool = true;
             Death();
         }
         if(anim.GetCurrentAnimatorStateInfo(0).IsName(damageString))
@@ -49,6 +53,8 @@ public class Health : MonoBehaviour {
     {
         anim.SetBool("dead", true);
         this.GetComponent<SpriteRenderer>().sprite = dead;
+        source.clip = dieClip;
+        source.Play();
         if (anim.GetCurrentAnimatorStateInfo(0).IsName(deadString))
         {
             StartCoroutine(delete());
@@ -56,10 +62,13 @@ public class Health : MonoBehaviour {
     }
     public void Damaged(int damage)
     {
+        source.clip = hurtClip;
+        source.Play();
         if (!invuln)
         {
             hP -= damage;
             anim.SetBool("damage", true);
+
         }
     }
 

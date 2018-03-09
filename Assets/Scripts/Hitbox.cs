@@ -8,7 +8,7 @@ public class Hitbox : MonoBehaviour
     public int damage;
     public bool hit;
     public bool left;
-
+    public AudioSource source;
     public void OnTriggerEnter2D (Collider2D other)
     {
 
@@ -27,7 +27,7 @@ public class Hitbox : MonoBehaviour
             }
             other.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2.up * 100) + (dir*1000));
             other.GetComponent<Health>().Damaged(damage);
-
+            source.Play();
         }
 
 

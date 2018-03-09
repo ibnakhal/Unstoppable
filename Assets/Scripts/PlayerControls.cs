@@ -21,6 +21,7 @@ public class PlayerControls : MonoBehaviour
     public float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     private Vector2 velocity = Vector2.zero;
+    public AudioClip jumpClip;
 
     [Header("State Bools")]
     public bool isIdle;
@@ -39,9 +40,13 @@ public class PlayerControls : MonoBehaviour
     public float attack2Delay;
     public float attack3Delay;
     public bool charge;
+
+
+    public AudioSource source;
     // Use this for initialization
     void Start()
     {
+        source = this.GetComponent<AudioSource>();
         anim = this.GetComponent<Animator>();
         masterSprite = this.GetComponent<SpriteRenderer>();
         body = this.GetComponent<Rigidbody2D>();
@@ -131,6 +136,8 @@ public class PlayerControls : MonoBehaviour
                 grounded = !grounded;
                 anim.SetBool("jump", true);
                 anim.SetBool("isGrounded", false);
+                source.clip = jumpClip;
+                source.Play();
             }
         }
         if(grounded)
