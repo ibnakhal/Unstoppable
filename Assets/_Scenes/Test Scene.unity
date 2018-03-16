@@ -456,12 +456,14 @@ MonoBehaviour:
   walkSpeed: 10
   jumpSpeed: 35
   grounded: 0
+  jumped: 0
   groundCheck: {fileID: 1644691176}
   groundRadius: 0.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1
   jumpClip: {fileID: 8300000, guid: bbc2d380d1de3634dbb03966c64829d3, type: 3}
+  landclip: {fileID: 8300000, guid: 206c81e77f4918c419ee2d9f689dec83, type: 3}
   isIdle: 0
   facingLeft: 1
   attackCounter: 0
@@ -472,10 +474,13 @@ MonoBehaviour:
   hitboxPivot: {fileID: 76777872}
   hitbox: {fileID: 1475279382}
   timer: 10
-  attack1Delay: 0.25
-  attack2Delay: 0
-  attack3Delay: 0
+  attack1Delay: 1
+  attack2Delay: 1
+  attack3Delay: 1.6
   charge: 0
+  attack1: z
+  attack2: x
+  attack3: c
   source: {fileID: 149623291}
 --- !u!50 &149623289
 Rigidbody2D:
@@ -4351,7 +4356,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d4d789793bd750c4b9c4d71769ce3943, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb70c55f764b48348b79a8d3f01c336b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

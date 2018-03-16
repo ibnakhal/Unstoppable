@@ -17,12 +17,13 @@ public class PlayerControls : MonoBehaviour
     [Header("Jumping")]
     public float jumpSpeed;
     public bool grounded;
+    public bool jumped;
     public Transform groundCheck;
     public float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     private Vector2 velocity = Vector2.zero;
     public AudioClip jumpClip;
-
+    public AudioClip landclip;
     [Header("State Bools")]
     public bool isIdle;
     public bool facingLeft = true;
@@ -40,6 +41,9 @@ public class PlayerControls : MonoBehaviour
     public float attack2Delay;
     public float attack3Delay;
     public bool charge;
+    public string attack1;
+    public string attack2;
+    public string attack3;
 
 
     public AudioSource source;
@@ -64,20 +68,45 @@ public class PlayerControls : MonoBehaviour
             isIdle = false;
         }
         timer -= Time.deltaTime;
+
+
+        
         //if(Input.GetAxis("Fire1")!=0)
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(attack1))
         {
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
-            anim.SetBool("attacking", true);
+            anim.SetBool("attack1", true);
             hitbox.GetComponent<Hitbox>().hit = true;
             hitbox.GetComponent<Hitbox>().damage = 2;
             timer = attack1Delay;
             hitbox.GetComponent<Hitbox>().left = facingLeft;
         }
+        if (Input.GetKeyDown(attack2))
+        {
+            attackCounter++;
+            anim.SetInteger("attack", attackCounter);
+            anim.SetBool("attack2", true);
+            hitbox.GetComponent<Hitbox>().hit = true;
+            hitbox.GetComponent<Hitbox>().damage = 2;
+            timer = attack2Delay;
+            hitbox.GetComponent<Hitbox>().left = facingLeft;
+        }
+        if (Input.GetKeyDown(attack3))
+        {
+            attackCounter++;
+            anim.SetInteger("attack", attackCounter);
+            anim.SetBool("attack3", true);
+            hitbox.GetComponent<Hitbox>().hit = true;
+            hitbox.GetComponent<Hitbox>().damage = 2;
+            timer = attack3Delay;
+            hitbox.GetComponent<Hitbox>().left = facingLeft;
+        }
         if (timer <= 0)
         {
-            anim.SetBool("attacking", false);
+            anim.SetBool("attack1", false);
+            anim.SetBool("attack2", false);
+            anim.SetBool("attack3", false);
             attackCounter = 0;
             anim.SetInteger("attack", attackCounter);
             timer = 0;
@@ -86,6 +115,18 @@ public class PlayerControls : MonoBehaviour
 
         }
 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1"))
+        {
+            anim.SetBool("attack1", false);
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch2"))
+        {
+            anim.SetBool("attack2", false);
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch3"))
+        {
+            anim.SetBool("attack3", false);
+        }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             anim.SetBool("charge", true);
@@ -130,7 +171,7 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetAxis("Jump") > 0)
         {
-            if (grounded)
+            if (grounded && !jumped)
             {
                 body.velocity = (new Vector2(0, jumpSpeed));
                 grounded = !grounded;
@@ -138,6 +179,7 @@ public class PlayerControls : MonoBehaviour
                 anim.SetBool("isGrounded", false);
                 source.clip = jumpClip;
                 source.Play();
+                jumped = true;
             }
         }
         if(grounded)
@@ -148,13 +190,15 @@ public class PlayerControls : MonoBehaviour
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLand") && !schocked)
         {
+            source.clip = landclip;
+            source.Play();
             schocked = true;
             GameObject clone = Instantiate(shockWave, waveSpawn1.position, waveSpawn1.rotation);
             clone.GetComponent<Shockwavemovement>().isleft = false;
             clone.GetComponent<Hitbox>().left = true;
             GameObject clone2 = Instantiate(shockWave, waveSpawn2.position, waveSpawn2.rotation);
             clone2.GetComponent<Shockwavemovement>().isleft = true;
-
+            jumped = false;
 
             StartCoroutine(wave());
         }

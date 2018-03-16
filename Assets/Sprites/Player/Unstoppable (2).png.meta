@@ -1,0 +1,747 @@
+fileFormatVersion: 2
+guid: 7898f931038ba2848a12397f97a0ad3c
+timeCreated: 1521154906
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Unstoppable (2)_0
+    21300002: Unstoppable (2)_1
+    21300004: Unstoppable (2)_2
+    21300006: Unstoppable (2)_3
+    21300008: Unstoppable (2)_4
+    21300010: Unstoppable (2)_5
+    21300012: Unstoppable (2)_6
+    21300014: Unstoppable (2)_7
+    21300016: Unstoppable (2)_8
+    21300018: Unstoppable (2)_9
+    21300020: Unstoppable (2)_10
+    21300022: Unstoppable (2)_11
+    21300024: Unstoppable (2)_12
+    21300026: Unstoppable (2)_13
+    21300028: Unstoppable (2)_14
+    21300030: Unstoppable (2)_15
+    21300032: Unstoppable (2)_16
+    21300034: Unstoppable (2)_17
+    21300036: Unstoppable (2)_18
+    21300038: Unstoppable (2)_19
+    21300040: Unstoppable (2)_20
+    21300042: Unstoppable (2)_21
+    21300044: Unstoppable (2)_22
+    21300046: Unstoppable (2)_23
+    21300048: Unstoppable (2)_24
+    21300050: Unstoppable (2)_25
+    21300052: Unstoppable (2)_26
+    21300054: Unstoppable (2)_27
+    21300056: Unstoppable (2)_28
+    21300058: Unstoppable (2)_29
+    21300060: Unstoppable (2)_30
+    21300062: Unstoppable (2)_31
+    21300064: Unstoppable (2)_32
+    21300066: Unstoppable (2)_33
+    21300068: Unstoppable (2)_34
+    21300070: Unstoppable (2)_35
+    21300072: Unstoppable (2)_36
+    21300074: Unstoppable (2)_37
+    21300076: Unstoppable (2)_38
+    21300078: Unstoppable (2)_39
+    21300080: Unstoppable (2)_40
+    21300082: Unstoppable (2)_41
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Unstoppable (2)_0
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1476
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_1
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1475
+        width: 66
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5016572, y: 0.54381263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_2
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1475
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1202
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1204
+        width: 55
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1275
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_6
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1286
+        width: 56
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1203
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1195
+        width: 66
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_9
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1192
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_10
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1191
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 901
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_12
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 902
+        width: 108
+        height: 76
+      alignment: 9
+      pivot: {x: 0.3373279, y: 0.50344926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 898
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_14
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 904
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_15
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 904
+        width: 66
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_16
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 905
+        width: 79
+        height: 71
+      alignment: 9
+      pivot: {x: 0.40495205, y: 0.52388024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_17
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 903
+        width: 82
+        height: 95
+      alignment: 9
+      pivot: {x: 0.41433716, y: 0.39546412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 512
+        width: 78
+        height: 83
+      alignment: 9
+      pivot: {x: 0.4335646, y: 0.4664461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_19
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 586
+        width: 58
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_20
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 593
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_21
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 593
+        width: 109
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5013484, y: 0.53674585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_22
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 507
+        width: 128
+        height: 81
+      alignment: 9
+      pivot: {x: 0.27154255, y: 0.4839131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_23
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 509
+        width: 133
+        height: 81
+      alignment: 9
+      pivot: {x: 0.25787744, y: 0.4793611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_24
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 288
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_25
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 288
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_26
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 284
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_27
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 287
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_28
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 207
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_29
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 223
+        width: 110
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 118
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_31
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 120
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_32
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 121
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_33
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 122
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_34
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 121
+        width: 73
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_35
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 118
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_36
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 178
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_37
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 120
+        width: 93
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_38
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 112
+        width: 113
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_39
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 104
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 593
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable (2)_41
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 593
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
