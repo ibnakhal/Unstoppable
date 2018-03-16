@@ -13,6 +13,7 @@ public class PlayerControls : MonoBehaviour
     [Header("Movement Variables")]
     public float walkSpeed;
     private Rigidbody2D body;
+    public bool moving;
 
     [Header("Jumping")]
     public float jumpSpeed;
@@ -54,6 +55,8 @@ public class PlayerControls : MonoBehaviour
         anim = this.GetComponent<Animator>();
         masterSprite = this.GetComponent<SpriteRenderer>();
         body = this.GetComponent<Rigidbody2D>();
+        //moving = true;
+
     }
 
     // Update is called once per frame
@@ -74,6 +77,7 @@ public class PlayerControls : MonoBehaviour
         //if(Input.GetAxis("Fire1")!=0)
         if (Input.GetKeyDown(attack1))
         {
+            //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
             anim.SetBool("attack1", true);
@@ -81,9 +85,12 @@ public class PlayerControls : MonoBehaviour
             hitbox.GetComponent<Hitbox>().damage = 2;
             timer = attack1Delay;
             hitbox.GetComponent<Hitbox>().left = facingLeft;
+            hitbox.GetComponent<Hitbox>().upMod = 100;
+
         }
         if (Input.GetKeyDown(attack2))
         {
+            //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
             anim.SetBool("attack2", true);
@@ -91,9 +98,12 @@ public class PlayerControls : MonoBehaviour
             hitbox.GetComponent<Hitbox>().damage = 2;
             timer = attack2Delay;
             hitbox.GetComponent<Hitbox>().left = facingLeft;
+            hitbox.GetComponent<Hitbox>().upMod = 3000;
+
         }
         if (Input.GetKeyDown(attack3))
         {
+            //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
             anim.SetBool("attack3", true);
@@ -101,6 +111,7 @@ public class PlayerControls : MonoBehaviour
             hitbox.GetComponent<Hitbox>().damage = 2;
             timer = attack3Delay;
             hitbox.GetComponent<Hitbox>().left = facingLeft;
+            hitbox.GetComponent<Hitbox>().upMod = 100;
         }
         if (timer <= 0)
         {
@@ -112,20 +123,25 @@ public class PlayerControls : MonoBehaviour
             timer = 0;
             charge = false;
             hitbox.GetComponent<Hitbox>().hit = false;
+            //moving = true;
+
 
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1"))
         {
             anim.SetBool("attack1", false);
+            //moving = true;
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch2"))
         {
             anim.SetBool("attack2", false);
+            //moving = true;
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch3"))
         {
             anim.SetBool("attack3", false);
+            //moving = true;
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -140,6 +156,8 @@ public class PlayerControls : MonoBehaviour
         {
             hitbox.GetComponent<Hitbox>().hit = true;
             hitbox.GetComponent<Hitbox>().damage = 5;
+            hitbox.GetComponent<Hitbox>().upMod = 1500;
+
             if (facingLeft)
             {
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * walkSpeed * 2000);
@@ -182,10 +200,10 @@ public class PlayerControls : MonoBehaviour
                 jumped = true;
             }
         }
-        if(grounded)
+        if (grounded)
         {
             anim.SetBool("isGrounded", true);
-            
+
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerLand") && !schocked)
@@ -202,18 +220,19 @@ public class PlayerControls : MonoBehaviour
 
             StartCoroutine(wave());
         }
+        //if (moving)
+        //{
+            float move = Input.GetAxis("Horizontal");
 
-        float move = Input.GetAxis("Horizontal");
-
-                body.velocity = new Vector2(move * walkSpeed, body.velocity.y);
-        if (move != 0)
-        {
-            anim.SetBool("Walking", true);
-        }
-        else
-        {
-            anim.SetBool("Walking", false);
-        }
+            body.velocity = new Vector2(move * walkSpeed, body.velocity.y);
+            if (move != 0)
+            {
+                anim.SetBool("Walking", true);
+            }
+            else
+            {
+                anim.SetBool("Walking", false);
+            }
             if (move > 0 && !facingLeft)
             {
                 Flip();
@@ -222,7 +241,8 @@ public class PlayerControls : MonoBehaviour
             {
                 Flip();
             }
-        }
+        //}
+    }
     
 
     public void Flip()
