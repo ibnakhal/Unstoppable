@@ -42,6 +42,7 @@ public class PlayerControls : MonoBehaviour
     public float attack2Delay;
     public float attack3Delay;
     public bool charge;
+    [Header ("Combat Keys")]
     public string attack1;
     public string attack2;
     public string attack3;
