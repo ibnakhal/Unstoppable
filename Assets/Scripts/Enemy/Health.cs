@@ -66,17 +66,27 @@ public class Health : MonoBehaviour {
             case State.walking:
                 anim.SetBool("walking", true);
                 anim.SetBool("attacking", false);
+            anim.SetBool("damage", false);
                 anim.SetBool("isIdle", false);
                 break;
             case State.idle:
                 anim.SetBool("isIdle", true);
                 anim.SetBool("attacking", false);
+            anim.SetBool("damage", false);
                 anim.SetBool("walking", false);
                 break;
             case State.attacking:
                 anim.SetBool("attacking", true);
                 anim.SetBool("isIdle", false);
                 anim.SetBool("walking", false);
+            anim.SetBool("damage", false);
+                break;
+            case State.hurt:
+                anim.SetBool("damage", true);
+                anim.SetBool("attacking", false);
+                anim.SetBool("isIdle", false);
+                anim.SetBool("walking", false);
+
                 break;
         }
         if (status == State.walking)
@@ -103,8 +113,7 @@ public class Health : MonoBehaviour {
         if (!invuln)
         {
             hP -= damage;
-            anim.SetBool("damage", true);
-
+            status = State.hurt;
         }
     }
 
@@ -142,7 +151,17 @@ public class Health : MonoBehaviour {
             status = State.idle;
         }
     }
-
+    public void idleFunction(bool swit)
+    {
+        if (swit)
+        {
+            status = State.idle;
+        }
+        else if (!swit)
+        {
+            status = State.walking;
+        }
+    }
 
 
 }
