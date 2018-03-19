@@ -25,6 +25,7 @@ public class PlayerControls : MonoBehaviour
     private Vector2 velocity = Vector2.zero;
     public AudioClip jumpClip;
     public AudioClip landclip;
+
     [Header("State Bools")]
     public bool isIdle;
     public bool facingLeft = true;
@@ -42,12 +43,22 @@ public class PlayerControls : MonoBehaviour
     public float attack2Delay;
     public float attack3Delay;
     public bool charge;
+    public bool attacking;
     [Header ("Combat Keys")]
     public string attack1;
     public string attack2;
     public string attack3;
+    [Header("Targeting")]
+    [SerializeField]
+    private List<string> targets;
 
+    [Header("Health")]
+    [SerializeField]
+    private int Armor;
+    [SerializeField]
+    private int health;
 
+    [Header ("Audio")]
     public AudioSource source;
     // Use this for initialization
     void Start()
@@ -78,6 +89,7 @@ public class PlayerControls : MonoBehaviour
         //if(Input.GetAxis("Fire1")!=0)
         if (Input.GetKeyDown(attack1))
         {
+            attacking = true;
             //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
@@ -91,6 +103,7 @@ public class PlayerControls : MonoBehaviour
         }
         if (Input.GetKeyDown(attack2))
         {
+            attacking = true;
             //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
@@ -104,6 +117,7 @@ public class PlayerControls : MonoBehaviour
         }
         if (Input.GetKeyDown(attack3))
         {
+            attacking = true;
             //moving = false;
             attackCounter++;
             anim.SetInteger("attack", attackCounter);
@@ -125,23 +139,28 @@ public class PlayerControls : MonoBehaviour
             charge = false;
             hitbox.GetComponent<Hitbox>().hit = false;
             //moving = true;
+            attacking = false;
+
 
 
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
+            attacking = false;
             anim.SetBool("attack1", false);
             //moving = true;
         }
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch2"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch2") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             anim.SetBool("attack2", false);
+            attacking = false;
             //moving = true;
         }
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch3"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch3")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             anim.SetBool("attack3", false);
+            attacking = false;
             //moving = true;
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -221,8 +240,8 @@ public class PlayerControls : MonoBehaviour
 
             StartCoroutine(wave());
         }
-        //if (moving)
-        //{
+        if (!attacking)
+        {
             float move = Input.GetAxis("Horizontal");
 
             body.velocity = new Vector2(move * walkSpeed, body.velocity.y);
@@ -242,7 +261,16 @@ public class PlayerControls : MonoBehaviour
             {
                 Flip();
             }
-        //}
+        }
+        else
+        {
+            anim.SetBool("Walking", false);
+
+            if (grounded)
+            {
+                body.velocity = new Vector2(0, 0);
+            }
+        }
     }
     
 
@@ -286,7 +314,8 @@ public class PlayerControls : MonoBehaviour
         }
 
         Debug.Log("boom");
-        if (other.gameObject.tag == "Enemy")
+        for(int x =0; x<targets.Count;x++)
+        if (other.gameObject.tag == targets[x])
         {
             if (charge)
             {
@@ -297,7 +326,20 @@ public class PlayerControls : MonoBehaviour
             }
         }
     }
+
+    public void Damage(int damage)
+    {
+        Debug.Log("Damaged");
+        if(Armor >0)
+        {
+            Armor -= damage;
+        }
+        else
+        {
+            health -= damage;
+        }
+    }
+
 }
 
-//use a timer instead of waiting for ticks. each time you attack reset the timer.
-// time -= time.deltatime
+

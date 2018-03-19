@@ -1,0 +1,570 @@
+fileFormatVersion: 2
+guid: 1c04eeda49b30dd4997a1cd2b0dc400e
+timeCreated: 1521430672
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Unstoppable Gangster 1 clone_0
+    21300002: Unstoppable Gangster 1 clone_1
+    21300004: Unstoppable Gangster 1 clone_2
+    21300006: Unstoppable Gangster 1 clone_3
+    21300008: Unstoppable Gangster 1 clone_4
+    21300010: Unstoppable Gangster 1 clone_5
+    21300012: Unstoppable Gangster 1 clone_6
+    21300014: Unstoppable Gangster 1 clone_7
+    21300016: Unstoppable Gangster 1 clone_8
+    21300018: Unstoppable Gangster 1 clone_9
+    21300020: Unstoppable Gangster 1 clone_10
+    21300022: Unstoppable Gangster 1 clone_11
+    21300024: Unstoppable Gangster 1 clone_12
+    21300026: Unstoppable Gangster 1 clone_13
+    21300028: Unstoppable Gangster 1 clone_14
+    21300030: Unstoppable Gangster 1 clone_15
+    21300032: Unstoppable Gangster 1 clone_16
+    21300034: Unstoppable Gangster 1 clone_17
+    21300036: Unstoppable Gangster 1 clone_18
+    21300038: Unstoppable Gangster 1 clone_19
+    21300040: Unstoppable Gangster 1 clone_20
+    21300042: Unstoppable Gangster 1 clone_21
+    21300044: Unstoppable Gangster 1 clone_22
+    21300046: Unstoppable Gangster 1 clone_23
+    21300048: Unstoppable Gangster 1 clone_24
+    21300050: Unstoppable Gangster 1 clone_25
+    21300052: Unstoppable Gangster 1 clone_26
+    21300054: Unstoppable Gangster 1 clone_27
+    21300056: Unstoppable Gangster 1 clone_28
+    21300058: Unstoppable Gangster 1 clone_29
+    21300060: Unstoppable Gangster 1 clone_30
+    21300062: Unstoppable Gangster 1 clone_31
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 488
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 533
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 488
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 488
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_4
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 533
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 501
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 498
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_7
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 500
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 497
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_9
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 506
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_10
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 503
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 338
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 383
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 335
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_14
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 345
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 386
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_16
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 354
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_17
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 351
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 353
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 350
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 357
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_21
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 354
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 205
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 205
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_24
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 202
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 204
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_26
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 201
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_27
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 188
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_28
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 187
+        width: 57
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_29
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 39
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_30
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 39
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Unstoppable Gangster 1 clone_31
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 39
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

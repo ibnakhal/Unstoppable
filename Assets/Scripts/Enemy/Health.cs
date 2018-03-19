@@ -23,9 +23,22 @@ public class Health : MonoBehaviour {
     public AudioSource source;
     public AudioClip hurtClip;
     public AudioClip dieClip;
+
+
+    public enum State
+    {
+        walking,
+        idle,
+        attacking,
+        hurt,
+        END,
+    }
+    public State status;
+
     // Use this for initialization
     void Start () {
         source = this.GetComponent<AudioSource>();
+        status = State.idle;
 
     }
 
@@ -47,6 +60,29 @@ public class Health : MonoBehaviour {
             anim.SetBool("damage", false);
         }
 
+
+        switch (status)
+        {
+            case State.walking:
+                anim.SetBool("walking", true);
+                anim.SetBool("attacking", false);
+                anim.SetBool("isIdle", false);
+                break;
+            case State.idle:
+                anim.SetBool("isIdle", true);
+                anim.SetBool("attacking", false);
+                anim.SetBool("walking", false);
+                break;
+            case State.attacking:
+                anim.SetBool("attacking", true);
+                anim.SetBool("isIdle", false);
+                anim.SetBool("walking", false);
+                break;
+        }
+        if (status == State.walking)
+        {
+            this.gameObject.transform.Translate(Vector2.left * Time.deltaTime);
+        }
     }
 
     public void Death()
@@ -60,7 +96,7 @@ public class Health : MonoBehaviour {
             StartCoroutine(delete());
         }
     }
-    public void Damaged(int damage)
+    public void Damage(int damage)
     {
         source.clip = hurtClip;
         source.Play();
@@ -91,6 +127,19 @@ public class Health : MonoBehaviour {
         else
         {
             anim.SetBool("isGrounded", false);
+        }
+    }
+
+
+    public void attackfunction(bool swit)
+    {
+        if (swit)
+        {
+            status = State.attacking;
+        }
+        else if (!swit)
+        {
+            status = State.idle;
         }
     }
 

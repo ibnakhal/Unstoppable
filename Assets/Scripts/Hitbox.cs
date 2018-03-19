@@ -10,27 +10,35 @@ public class Hitbox : MonoBehaviour
     public bool left;
     public AudioSource source;
     public int upMod;
+
+    [SerializeField]
+    private List<string> targets;
+
     public void OnTriggerEnter2D (Collider2D other)
     {
 
 
-        if (other.tag == "Enemy" && hit)
+        for (int x = 0; x < targets.Count; x++)
         {
-            Vector2 dir = new Vector2();
 
-            if (!left)
+            if (other.tag == targets[x] && hit)
             {
-                dir = Vector2.left;
+                Vector2 dir = new Vector2();
+
+                if (!left)
+                {
+                    dir = Vector2.left;
+                }
+                else
+                {
+                    dir = Vector2.right;
+                }
+                other.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2.up * upMod) + (dir * 1000));
+                //other.GetComponent<Health>().Damaged(damage);
+                other.SendMessage("Damage", damage);
+                source.Play();
             }
-            else
-            {
-                dir = Vector2.right;
-            }
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2.up * upMod) + (dir*1000));
-            other.GetComponent<Health>().Damaged(damage);
-            source.Play();
         }
-
 
     }
 
