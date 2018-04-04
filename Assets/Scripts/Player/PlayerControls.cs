@@ -43,6 +43,7 @@ public class PlayerControls : MonoBehaviour
     public float attack2Delay;
     public float attack3Delay;
     public bool charge;
+    public float chargeMod;
     public bool attacking;
     [Header ("Combat Keys")]
     public string attack1;
@@ -180,11 +181,11 @@ public class PlayerControls : MonoBehaviour
 
             if (facingLeft)
             {
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * walkSpeed * 2000);
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * walkSpeed * chargeMod);
             }
             if(!facingLeft)
             {
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * walkSpeed * 2000);
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * walkSpeed * chargeMod);
 
 
             }

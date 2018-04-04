@@ -13,7 +13,7 @@ public class Health : MonoBehaviour {
     public Sprite dead;
     [Header("Animations")]
     public Animator anim;
-
+    public float speed;
     [Header("Grounded Stats")]
     public bool grounded;
     public Transform groundCheck;
@@ -38,7 +38,7 @@ public class Health : MonoBehaviour {
     // Use this for initialization
     void Start () {
         source = this.GetComponent<AudioSource>();
-        status = State.idle;
+        //status = State.idle;
 
     }
 
@@ -91,7 +91,7 @@ public class Health : MonoBehaviour {
         }
         if (status == State.walking)
         {
-            this.gameObject.transform.Translate(Vector2.left * Time.deltaTime);
+            this.gameObject.transform.Translate(Vector2.left * Time.deltaTime * speed);
         }
     }
 
