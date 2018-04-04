@@ -4683,7 +4683,7 @@ MonoBehaviour:
   damage: 1
   hit: 1
   left: 0
-  source: {fileID: 0}
+  source: {fileID: 1383630068}
   upMod: 0
   targets:
   - Player
@@ -8715,6 +8715,11 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.09
+--- !u!82 &1730948440 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82967087620996996, guid: 9d0a4a6713cc4014a8de8c17e163c67c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2088922883}
 --- !u!4 &1730948446 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4278633777759562, guid: 9d0a4a6713cc4014a8de8c17e163c67c,
@@ -10209,6 +10214,11 @@ Prefab:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114910471511613772, guid: 9d0a4a6713cc4014a8de8c17e163c67c,
+        type: 2}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1730948440}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d0a4a6713cc4014a8de8c17e163c67c, type: 2}
   m_IsPrefabParent: 0
