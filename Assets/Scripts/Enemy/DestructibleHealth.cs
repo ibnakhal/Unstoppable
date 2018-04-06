@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour {
+public class DestructibleHealth : MonoBehaviour {
+
     [Header("Health Stats")]
     public int hP;
     public string damageString;
@@ -36,27 +37,29 @@ public class Health : MonoBehaviour {
     public State status;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         source = this.GetComponent<AudioSource>();
         //status = State.idle;
 
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
-		if(hP<=0 && !deadBool)
+        if (hP <= 0 && !deadBool)
         {
             deadBool = true;
             Death();
         }
-        if(anim.GetCurrentAnimatorStateInfo(0).IsName(damageString))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName(damageString) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
             anim.SetBool("damage", false);
             invuln = false;
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName(hurtString))
         {
+            Debug.Log(anim.GetCurrentAnimatorStateInfo(0));
             anim.SetBool("damage", false);
         }
 
@@ -66,20 +69,20 @@ public class Health : MonoBehaviour {
             case State.walking:
                 anim.SetBool("walking", true);
                 anim.SetBool("attacking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 anim.SetBool("isIdle", false);
                 break;
             case State.idle:
                 anim.SetBool("isIdle", true);
                 anim.SetBool("attacking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 anim.SetBool("walking", false);
                 break;
             case State.attacking:
                 anim.SetBool("attacking", true);
                 anim.SetBool("isIdle", false);
                 anim.SetBool("walking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 break;
             case State.hurt:
                 anim.SetBool("damage", true);
@@ -110,13 +113,10 @@ public class Health : MonoBehaviour {
     {
         source.clip = hurtClip;
         source.Play();
-        if (!invuln)
-        {
+
             hP -= damage;
             status = State.hurt;
-            anim.SetInteger("health",hP);
-
-        }
+            anim.SetInteger("health", hP);
     }
 
 
@@ -128,19 +128,7 @@ public class Health : MonoBehaviour {
 
     }
 
-    public void FixedUpdate()
-    {
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-
-        if(grounded)
-        {
-            anim.SetBool("isGrounded", true);
-        }
-        else
-        {
-            anim.SetBool("isGrounded", false);
-        }
-    }
+   
 
 
     public void attackfunction(bool swit)

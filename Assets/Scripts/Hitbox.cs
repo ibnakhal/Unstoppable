@@ -35,6 +35,7 @@ public class Hitbox : MonoBehaviour
                 }
                 other.gameObject.GetComponent<Rigidbody2D>().AddForce((Vector2.up * upMod) + (dir * 1000));
                 //other.GetComponent<Health>().Damaged(damage);
+                Debug.Log(other.gameObject+ " Was hit");
                 other.SendMessage("Damage", damage);
                 source.Play();
             }
