@@ -90,44 +90,55 @@ public class PlayerControls : MonoBehaviour
         //if(Input.GetAxis("Fire1")!=0)
         if (Input.GetKeyDown(attack1))
         {
-            attacking = true;
-            //moving = false;
-            attackCounter++;
-            anim.SetInteger("attack", attackCounter);
-            anim.SetBool("attack1", true);
-            hitbox.GetComponent<Hitbox>().hit = true;
-            hitbox.GetComponent<Hitbox>().damage = 2;
-            timer = attack1Delay;
-            hitbox.GetComponent<Hitbox>().left = facingLeft;
-            hitbox.GetComponent<Hitbox>().upMod = 100;
-
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch2") && !anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch3"))
+            {
+                attacking = true;
+                //moving = false;
+                attackCounter++;
+                anim.SetInteger("attack", attackCounter);
+                anim.SetBool("attack1", true);
+                anim.SetBool("attack2", false);
+                anim.SetBool("attack3", false);
+                hitbox.GetComponent<Hitbox>().hit = true;
+                hitbox.GetComponent<Hitbox>().damage = 2;
+                timer = attack1Delay;
+                hitbox.GetComponent<Hitbox>().left = facingLeft;
+                hitbox.GetComponent<Hitbox>().upMod = 100;
+            }
         }
         if (Input.GetKeyDown(attack2))
         {
-            attacking = true;
-            //moving = false;
-            attackCounter++;
-            anim.SetInteger("attack", attackCounter);
-            anim.SetBool("attack2", true);
-            hitbox.GetComponent<Hitbox>().hit = true;
-            hitbox.GetComponent<Hitbox>().damage = 2;
-            timer = attack2Delay;
-            hitbox.GetComponent<Hitbox>().left = facingLeft;
-            hitbox.GetComponent<Hitbox>().upMod = 3000;
-
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("punch1") && !anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch3"))
+            {
+                attacking = true;
+                //moving = false;
+                attackCounter++;
+                anim.SetInteger("attack", attackCounter);
+                anim.SetBool("attack1", false);
+                anim.SetBool("attack2", true);
+                anim.SetBool("attack3", false); hitbox.GetComponent<Hitbox>().hit = true;
+                hitbox.GetComponent<Hitbox>().damage = 2;
+                timer = attack2Delay;
+                hitbox.GetComponent<Hitbox>().left = facingLeft;
+                hitbox.GetComponent<Hitbox>().upMod = 3000;
+            }
         }
         if (Input.GetKeyDown(attack3))
         {
-            attacking = true;
-            //moving = false;
-            attackCounter++;
-            anim.SetInteger("attack", attackCounter);
-            anim.SetBool("attack3", true);
-            hitbox.GetComponent<Hitbox>().hit = true;
-            hitbox.GetComponent<Hitbox>().damage = 2;
-            timer = attack3Delay;
-            hitbox.GetComponent<Hitbox>().left = facingLeft;
-            hitbox.GetComponent<Hitbox>().upMod = 100;
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("punch1") && !anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerPunch2"))
+            {
+                attacking = true;
+                //moving = false;
+                attackCounter++;
+                anim.SetInteger("attack", attackCounter);
+                anim.SetBool("attack1", false);
+                anim.SetBool("attack2", false);
+                anim.SetBool("attack3", true); hitbox.GetComponent<Hitbox>().hit = true;
+                hitbox.GetComponent<Hitbox>().damage = 2;
+                timer = attack3Delay;
+                hitbox.GetComponent<Hitbox>().left = facingLeft;
+                hitbox.GetComponent<Hitbox>().upMod = 100;
+            }
         }
         if (timer <= 0)
         {
@@ -145,7 +156,7 @@ public class PlayerControls : MonoBehaviour
 
 
         }
-
+        Debug.Log(anim.GetCurrentAnimatorStateInfo(0).nameHash + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             attacking = false;
