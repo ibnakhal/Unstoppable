@@ -156,7 +156,7 @@ public class PlayerControls : MonoBehaviour
 
 
         }
-        Debug.Log(anim.GetCurrentAnimatorStateInfo(0).nameHash + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("punch1") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             attacking = false;
