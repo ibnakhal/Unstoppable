@@ -25,7 +25,11 @@ public class DestructibleHealth : MonoBehaviour {
     public AudioClip hurtClip;
     public AudioClip dieClip;
 
+    [Header("Falling")]
+    public float fallingThreshold;
+    public float flyingThreshold;
 
+    
     public enum State
     {
         walking,
@@ -154,5 +158,15 @@ public class DestructibleHealth : MonoBehaviour {
         }
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            if (this.GetComponent<Rigidbody2D>().velocity.y <= fallingThreshold) 
+            {
+                collision.gameObject.GetComponent<Health>().Damage(999);
+            }
+        }
+    }
 
 }

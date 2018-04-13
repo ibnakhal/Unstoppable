@@ -156,6 +156,7 @@ public class Health : MonoBehaviour {
     }
     public void idleFunction(bool swit)
     {
+        Debug.Log("im idle");
         if (swit)
         {
             status = State.idle;

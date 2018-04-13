@@ -21,7 +21,7 @@ public class PatrolBox : MonoBehaviour
     public IEnumerator idePause()
     {
         toDirect.GetComponent<Health>().idleFunction(true);
-
+        Debug.Log("Setting " + toDirect + " to idle mode");
         yield return new WaitForSeconds(pauseTime);
         toDirect.transform.Rotate(new Vector3(0, 180, 0));
         toDirect.GetComponent<Health>().idleFunction(false);
