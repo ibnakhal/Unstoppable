@@ -8,7 +8,7 @@ public class Health : MonoBehaviour {
     public string damageString;
     public string deadString;
     public string hurtString;
-    public bool invuln;
+    public bool attacking;
     public bool deadBool = false;
     public Sprite dead;
     [Header("Animations")]
@@ -53,7 +53,15 @@ public class Health : MonoBehaviour {
         if(anim.GetCurrentAnimatorStateInfo(0).IsName(damageString))
         {
             anim.SetBool("damage", false);
-            invuln = false;
+            if(!attacking)
+            {
+                status = State.idle;
+            }
+            else
+            {
+                status = State.walking;
+            }
+
         }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName(hurtString))
         {
@@ -66,20 +74,20 @@ public class Health : MonoBehaviour {
             case State.walking:
                 anim.SetBool("walking", true);
                 anim.SetBool("attacking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 anim.SetBool("isIdle", false);
                 break;
             case State.idle:
                 anim.SetBool("isIdle", true);
                 anim.SetBool("attacking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 anim.SetBool("walking", false);
                 break;
             case State.attacking:
                 anim.SetBool("attacking", true);
                 anim.SetBool("isIdle", false);
                 anim.SetBool("walking", false);
-            anim.SetBool("damage", false);
+                anim.SetBool("damage", false);
                 break;
             case State.hurt:
                 anim.SetBool("damage", true);
@@ -110,13 +118,11 @@ public class Health : MonoBehaviour {
     {
         source.clip = hurtClip;
         source.Play();
-        if (!invuln)
-        {
+
             hP -= damage;
             status = State.hurt;
             anim.SetInteger("health",hP);
 
-        }
     }
 
 

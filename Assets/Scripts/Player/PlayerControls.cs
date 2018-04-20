@@ -120,7 +120,7 @@ public class PlayerControls : MonoBehaviour
                 hitbox.GetComponent<Hitbox>().damage = 2;
                 timer = attack2Delay;
                 hitbox.GetComponent<Hitbox>().left = facingLeft;
-                hitbox.GetComponent<Hitbox>().upMod = 3000;
+                hitbox.GetComponent<Hitbox>().upMod = 500;
             }
         }
         if (Input.GetKeyDown(attack3))
